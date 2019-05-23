@@ -84,7 +84,7 @@ void argon2d_call(const void *input, void *output)
     argon2_ctx(&context, Argon2_d);
 }
 
-void argon2d_dyn_hash(const unsigned char* input, unsigned char* output)
+void argon2d_hash(const unsigned char* input, unsigned char* output)
 {
     argon2d_call(input, output);
 }
